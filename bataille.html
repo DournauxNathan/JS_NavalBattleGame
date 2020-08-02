@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Bataille navale</title>
+		<link rel="icon" type="image/png" href="img/boat.png" />
+
+		<meta charset="utf-8">
+
+		<link rel="stylesheet" type="text/css" href="bataille.css"> 
+	</head>
+
+	<body>
+		<div id="play">
+			<button class="new">  Nouvelle Partie </button>
+		</div>
+
+
+		<div id="jeu">
+
+			<div id="info">
+				<p> Coups : <span id="nbCoups">0</span> </p>
+
+				<p>Bateaux restants : <span id="nbBateaux"> 5 </span> </p>
+			</div>
+
+			
+			<table  id="plateau" border="1">
+				 <tr> <!--  ligne 0 -->
+					<td> </td>
+
+					<td>1</td>
+					<td>2</td>
+					<td>3</td>
+					<td>4</td>
+					<td>5</td>
+					<td>6</td>
+					<td>7</td>
+					<td>8</td>
+					<td>9</td>
+					<td>10</td>
+				</tr>
+
+				<tr> <!--  ligne 1 -->
+					<td>A</td>
+					
+					<td id="10"> <button class="case"></button> </td>
+					<td id="11"> <button class="case"></button> </td>
+					<td id="12"> <button class="case"></button> </td>
+					<td id="13"> <button class="case"></button> </td>
+					<td id="14"> <button class="case"></button> </td>
+					<td id="15"> <button class="case cinq"></button> </td>
+					<td id="16"> <button class="case cinq"></button> </td>
+					<td id="17"> <button class="case cinq"></button> </td>
+					<td id="18"> <button class="case cinq"></button> </td>
+					<td id="19"> <button class="case cinq"></button> </td>
+				</tr>
+
+				<tr> <!--  ligne 2 -->
+					<td>B</td>
+
+					<td id="20"> <button class="case"></button> </td>
+					<td id="21"> <button class="case deux"></button> </td>
+					<td id="22"> <button class="case"></button> </td>
+					<td id="23"> <button class="case"></button> </td>
+					<td id="24"> <button class="case"></button> </td>
+					<td id="25"> <button class="case"></button> </td>
+					<td id="26"> <button class="case"></button> </td>
+					<td id="27"> <button class="case"></button> </td>
+					<td id="28"> <button class="case"></button> </td>
+					<td id="29"> <button class="case"></button> </td>
+				</tr>
+
+				<tr> <!--  ligne 3 -->
+					<td>C</td>
+					
+					<td id="30"> <button class="case"></button> </td>
+					<td id="31"> <button class="case deux"></button> </td>
+					<td id="32"> <button class="case"></button> </td>
+					<td id="33"> <button class="case"></button> </td>
+					<td id="34"> <button class="case"></button> </td>
+					<td id="35"> <button class="case"></button> </td>
+					<td id="36"> <button class="case"></button> </td>
+					<td id="37"> <button class="case"></button> </td>
+					<td id="38"> <button class="case trois"></button> </td>
+					<td id="39"> <button class="case"></button> </td>
+
+				</tr>
+
+				<tr> <!--  ligne 4 -->
+					<td>D</td>
+
+					
+					<td id="40"> <button class="case"></button> </td>
+					<td id="41"> <button class="case"></button> </td>
+					<td id="42"> <button class="case"></button> </td>
+					<td id="43"> <button class="case"></button> </td>
+					<td id="44"> <button class="case"></button> </td>
+					<td id="45"> <button class="case"></button> </td>
+					<td id="46"> <button class="case"></button> </td>
+					<td id="47"> <button class="case"></button> </td>
+					<td id="48"> <button class="case trois"></button> </td>
+					<td id="49"> <button class="case"></button> </td>
+				</tr>
+
+				<tr> <!--  ligne 5 -->
+					<td>E</td>
+
+					
+					<td id="50"> <button class="case"></button> </td>
+					<td id="51"> <button class="case"></button> </td>
+					<td id="52"> <button class="case"></button> </td>
+					<td id="53"> <button class="case"></button> </td>
+					<td id="54"> <button class="case"></button> </td>
+					<td id="55"> <button class="case"></button> </td>
+					<td id="56"> <button class="case"></button> </td>
+					<td id="57"> <button class="case"></button> </td>
+					<td id="58"> <button class="case trois"></button> </td>
+					<td id="59"> <button class="case"></button> </td>
+				
+				</tr>
+
+				<tr> <!--  ligne 6 -->
+					<td>F</td>
+
+					
+					<td id="60"> <button class="case"></button> </td>
+					<td id="61"> <button class="case"></button> </td>
+					<td id="62"> <button class="case"></button> </td>
+					<td id="63"> <button class="case"></button> </td>
+					<td id="64"> <button class="case"></button> </td>
+					<td id="65"> <button class="case"></button> </td>
+					<td id="66"> <button class="case"></button> </td>
+					<td id="67"> <button class="case"></button> </td>
+					<td id="68"> <button class="case"></button> </td>
+					<td id="69"> <button class="case"></button> </td>
+				</tr>
+
+				<tr> <!--  ligne 7 -->
+					<td>G</td>
+
+				
+					<td id="70"> <button class="case"></button> </td>
+					<td id="71"> <button class="case"></button> </td>
+					<td id="72"> <button class="case"></button> </td>
+					<td id="73"> <button class="case"></button> </td>
+					<td id="74"> <button class="case"></button> </td>
+					<td id="75"> <button class="case"></button> </td>
+					<td id="76"> <button class="case"></button> </td>
+					<td id="77"> <button class="case"></button> </td>
+					<td id="78"> <button class="case"></button> </td>
+					<td id="79"> <button class="case"></button> </td>
+				</tr>
+
+				<tr> <!--  ligne 8 -->
+					<td>H</td>
+				
+				
+					<td id="80"> <button class="case"></button> </td>
+					<td id="81"> <button class="case trois"></button> </td>
+					<td id="82"> <button class="case"></button> </td>
+					<td id="83"> <button class="case"></button> </td>
+					<td id="84"> <button class="case"></button> </td>
+					<td id="85"> <button class="case"></button> </td>
+					<td id="86"> <button class="case"></button> </td>
+					<td id="87"> <button class="case"></button> </td>
+					<td id="88"> <button class="case"></button> </td>
+					<td id="89"> <button class="case"></button> </td>
+				</tr>
+
+				<tr> <!--  ligne 9 -->
+					<td>I</td>
+				
+					<td id="90"> <button class="case"></button> </td>
+					<td id="91"> <button class="case trois"></button> </td>
+					<td id="92"> <button class="case"></button> </td>
+					<td id="93"> <button class="case"></button> </td>
+					<td id="94"> <button class="case quatre"></button> </td>
+					<td id="95"> <button class="case quatre"></button> </td>
+					<td id="96"> <button class="case quatre"></button> </td>
+					<td id="97"> <button class="case quatre"></button> </td>
+					<td id="98"> <button class="case"></button> </td>
+					<td id="99"> <button class="case"></button> </td>
+				</tr>
+				<tr> <!--  ligne 10 -->
+					<td>J</td>
+
+					<td id="100"> <button class="case"></button> </td>
+					<td id="101"> <button class="case trois"></button> </td>
+					<td id="102"> <button class="case"></button> </td>
+					<td id="103"> <button class="case"></button> </td>
+					<td id="104"> <button class="case"></button> </td>
+					<td id="105"> <button class="case"></button> </td>
+					<td id="106"> <button class="case"></button> </td>
+					<td id="107"> <button class="case"></button> </td>
+					<td id="109"> <button class="case"></button> </td>
+					<td id="110"> <button class="case"></button> </td>
+				</tr>
+	  		</table>
+  			
+  			<div id="messages"> </div>
+		</div>
+
+		<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+		<script src="bataille.js"></script>
+	</body>
+</html>

@@ -1,0 +1,95 @@
+body p, body ul, body div {
+	margin:2px;
+}
+#play{
+	margin-left: 200px;
+}
+.new{
+    background: none repeat scroll 0 0;
+    border: 1px solid #3866A3;
+    border-radius: 8px;
+    line-height: 40px;
+    text-align: center;
+    text-decoration: none;
+    padding-left: 14px;
+	padding-right: 14px;
+	margin: 15px;
+}
+
+
+
+#jeu{
+	border: 1px solid #30416A;
+	display: inline-block;
+	height: 690px;
+	width: 700px;
+}
+
+
+#info{
+	width:500px;
+	margin: 15px 15px 15px 90px;
+}
+
+#info p{
+	display: inline-block;
+}
+
+#info input{
+	width:50px;
+}
+	
+
+td,
+th {
+    border: 1px solid black;
+    text-align: center;
+    width: 50px;
+    height: 50px;}
+
+table {
+    border: 2px solid black;
+	border-color: black;
+    background-image: url(img/eau.png);
+    margin: 20px 35px;
+}
+
+.bateau, .case{
+    background: transparent;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+#messages {
+	float:left;
+	margin-top: 2px;
+	border: 1px solid #0000FF;
+	height: 60px;
+	width: 660px;
+	margin-right: 10px;
+	margin-left: 20px;
+	overflow-y: scroll;
+}
+
+#messages p {
+	margin:0;
+	font-style: 'Courier New';
+	font-size: 12px;
+}
+
+#messages p:last-child {
+	margin-bottom: 5px;
+}
+
+/*.o{
+	background-color: #9DE08D;
+}
+
+.ko{
+	background-color: #FF6B6B;
+}*/
+
+
+
+
+
